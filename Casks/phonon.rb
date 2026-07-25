@@ -1,6 +1,6 @@
 cask "phonon" do
-  version "0.1.3"
-  sha256 "2a8c53e4eed7b1c93ae865aa88ec72c126a0485fd02a791750e4f078e5fc7f7d"
+  version "0.1.4"
+  sha256 "158b0ede03defcfaae7dd204c836f7ea4ba0c8725acf9b2ddf4876ca8002f67a"
 
   url "https://github.com/Infatoshi/phonon/releases/download/v#{version}/Phonon.dmg",
       verified: "github.com/Infatoshi/phonon/"
