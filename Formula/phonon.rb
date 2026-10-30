@@ -1,8 +1,8 @@
 class Phonon < Formula
   desc "Fast, local, open-source voice typing for macOS"
   homepage "https://phonon.sh"
-  url "https://github.com/Infatoshi/phonon/archive/refs/tags/v0.1.7.tar.gz"
-  sha256 "f80b22e0818eb85ced53ab537c6ba65bd82ff7d48c8797919b0186a0b34eaa2f"
+  url "https://github.com/Infatoshi/phonon/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "2604d024502980ca8ba7b75332052124394262eba83ad7a1b095a8f0ba7187d2"
   license "GPL-3.0-only"
 
   depends_on "rust" => :build
@@ -30,8 +30,12 @@ class Phonon < Formula
   def caveats
     <<~EOS
       Run `phonon` to launch the native app. On first launch, Phonon downloads
-      its open Parakeet model weights and asks for the macOS permissions needed
-      for voice typing.
+      its open models (Parakeet and the Phonon refiner, about 4.9 GB) and asks
+      for the macOS permissions needed for voice typing.
+
+      This source build corrects on the MLX refiner. The cask's signed app also
+      bundles the faster native Metal engine:
+        brew install --cask infatoshi/phonon/phonon
     EOS
   end
 
