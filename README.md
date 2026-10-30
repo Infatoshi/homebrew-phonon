@@ -7,6 +7,7 @@ phonon
 
 The cask installs the signed and Apple-notarized app on Apple silicon. Phonon
 downloads its open speech and correction models (about 4.9 GB) on first
-launch. To build from source instead,
-use `brew install --formula infatoshi/phonon/phonon`. Source and release notes
+launch. To build from source instead, run `brew trust infatoshi/phonon` once
+(Homebrew asks this for formulae from third-party taps), then
+`brew install --formula infatoshi/phonon/phonon`. Source and release notes
 live at <https://github.com/Infatoshi/phonon>.
