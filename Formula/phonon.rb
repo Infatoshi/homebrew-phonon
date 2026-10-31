@@ -1,8 +1,8 @@
 class Phonon < Formula
   desc "Fast, local, open-source voice typing for macOS"
   homepage "https://phonon.sh"
-  url "https://github.com/Infatoshi/phonon/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "2604d024502980ca8ba7b75332052124394262eba83ad7a1b095a8f0ba7187d2"
+  url "https://github.com/Infatoshi/phonon/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "16aec095b953dea83ab53efcf367053254081b67dac36f0e877de7c8a38b84e1"
   license "GPL-3.0-only"
 
   depends_on "rust" => :build
