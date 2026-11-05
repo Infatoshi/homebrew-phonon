@@ -35,7 +35,7 @@ class Phonon < Formula
 
       This source build corrects on the MLX refiner. The cask's signed app also
       bundles the faster native Metal engine:
-        brew install --cask infatoshi/phonon/phonon
+        brew install --cask infatoshi/tap/phonon
     EOS
   end
 
